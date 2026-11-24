@@ -70,11 +70,11 @@ env:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-15-intel
 
     strategy:
       matrix:
-        scheme: ["default", "rootless", "roothide", "bootstrap"]
+        scheme: ["rootless"]
 
     steps:
       - name: Checkout repository
